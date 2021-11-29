@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: com.example.main.HubClientTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 5, Skipped: 0, Time elapsed: 0.082 s <<< FAILURE! - in com.example.main.HubClientTest
+retrieveAll  Time elapsed: 0.051 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.main.HubClientTest.retrieveAll(HubClientTest.java:28)
+
+retrieveEmployeeById_NotFound  Time elapsed: 0.015 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <org.springframework.web.reactive.function.client.WebClientResponseException> but was: <java.lang.NullPointerException>
+	at com.example.main.HubClientTest.retrieveEmployeeById_NotFound(HubClientTest.java:41)
+Caused by: java.lang.NullPointerException
+	at com.example.main.HubClientTest.lambda$retrieveEmployeeById_NotFound$0(HubClientTest.java:41)
+	at com.example.main.HubClientTest.retrieveEmployeeById_NotFound(HubClientTest.java:41)
+
+hub_custom_Error_Handling  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.main.HubClientTest.hub_custom_Error_Handling(HubClientTest.java:74)
+
+a  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.main.HubClientTest.a(HubClientTest.java:55)
+
+retrieveById  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.main.HubClientTest.retrieveById(HubClientTest.java:34)
+
+retrieveEmployeeByName_NotFound  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <org.springframework.web.reactive.function.client.WebClientResponseException> but was: <java.lang.NullPointerException>
+	at com.example.main.HubClientTest.retrieveEmployeeByName_NotFound(HubClientTest.java:48)
+Caused by: java.lang.NullPointerException
+	at com.example.main.HubClientTest.lambda$retrieveEmployeeByName_NotFound$1(HubClientTest.java:48)
+	at com.example.main.HubClientTest.retrieveEmployeeByName_NotFound(HubClientTest.java:48)
+
+hub_BadRequest  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.main.HubClientTest.hub_BadRequest(HubClientTest.java:65)
+
